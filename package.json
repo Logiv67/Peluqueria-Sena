@@ -1,7 +1,7 @@
 {
   "name": "apipeluqueria",
   "version": "1.0.0",
-  "description": "",
+  "description": "Clase",
   "main": "peluqueria.js",
   "scripts": {
     "dev": "node --watch peluqueria.js"
@@ -16,5 +16,14 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mysql2": "^3.24.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Logiv67/Peluqueria-Sena.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Logiv67/Peluqueria-Sena/issues"
+  },
+  "homepage": "https://github.com/Logiv67/Peluqueria-Sena#readme"
 }

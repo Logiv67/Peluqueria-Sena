@@ -1,5 +1,6 @@
 const modelo = require('../../modelo/admin/CrearClienteModelo');
-class CrearClienteControlador {     // funcion crear nuevo cliente
+class CrearClienteControlador {     
+     // funcion crear nuevo cliente
     static async crearCliente(req, res) {
         const { t1: tipoD, t2: numeroD, t3: nom, t4: dir, t5: tel, t6: email, t7: contras } = req.body;
         // ------------👁️‍🗨️ validaciones👁️‍🗨️----------------
@@ -71,7 +72,7 @@ class CrearClienteControlador {     // funcion crear nuevo cliente
 
     //verificar nombres completos
     static vertipoD(tipoD) {
-        const tip = /^[A-Z\s]{2,3}$/;
+        const tip = /^[A-Z]{2,3}$/;
         if (!tip.test(tipoD)) {
             return 'tipo de documento invalidos minimo 2 caracteres o maximo 3  CC, TI, CE';
         } else {
@@ -148,3 +149,4 @@ class CrearClienteControlador {     // funcion crear nuevo cliente
 
 
 module.exports = CrearClienteControlador;
+
